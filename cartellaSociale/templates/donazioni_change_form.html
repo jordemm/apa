@@ -1,0 +1,57 @@
+{% extends "admin/change_form.html" %}
+
+     {% block javascripts %}
+{#        {{ block.super }}#}
+{#          <script type="text/javascript" charset="utf-8">#}
+{#            (function($) {#}
+{#                $(document).ready(function() {#}
+{#                    $("#id_nasc").on('blur', function () {#}
+{#                        nasc = $(this).val();#}
+{#                        alert(new Date() + '\n' + new Date(nasc) + '\n' + new Date('milliseconds') + (new Date() - new Date(nasc)));#}
+{#                        eta = new Date() - new Date(nasc);#}
+{#                        var today = new Date();#}
+{#                        alert(eta + '\n' + new Date() + '\n' + (new Date() - new Date(nasc)) + '\n' + new Date(nasc) );#}
+{#                        dd = eta.getDate();#}
+{#                        mm = eta.getMonth() + 1;#}
+{#                        yyyy = eta.getFullYear();#}
+{#                        today = dd + '/' + mm + '/' + yyyy;#}
+{##}
+{#                        $('#id_eta').val(dd + '/' + mm + '/' + yyyy)#}
+{#                    });#}
+{#                });#}
+{#            })(grp.jQuery);#}
+{#        </script>#}
+     {% endblock %}
+
+
+{% block after_field_sets %}
+{#    <p style="color: red"><strong> Add stuffs here Add stuffs here Add stuffs here  Add stuffs here Add stuffs here Add stuffs here#}
+{#        Add stuffs here Add stuffs here Add stuffs here  Add stuffs here Add stuffs here Add stuffs here#}
+{#    Add stuffs here Add stuffs here Add stuffs here  Add stuffs here Add stuffs here Add stuffs here#}
+{#        Add stuffs here Add stuffs here Add stuffs here  Add stuffs here Add stuffs here Add stuffs here#}
+{#    </strong></p>#}
+{#    <button>Anteprima stampa visita ambulatorio</button>#}
+{##}
+{##}
+{##}
+{# <input type="button" value="Anteprima stampa visita ambulatorio">#}
+{#{{ block.super }}#}
+{% endblock %}
+
+{#{% block  admin_change_form_document_ready %}#}
+{#     {{ block.super }}#}
+{#        <script>#}
+{#            alert('hello world');#}
+{#                // when any input in this form changes, call recalculate price#}
+{#                $('#{{ opts.model_name }} + "_form" input').on('change', calculateCF);#}
+{##}
+{#                var reclaculate_price = function(){#}
+{#                  alert('hello world');#}
+{#                  // whatever your logic is for calculating the offer price#}
+{#                  var value = $('#design_hours').val() * $('#design_price').val();#}
+{#                  // Add some error checking here to ensure the price is valid#}
+{#                  // Set the value to you field#}
+{#                  $('#offer_price').val(value);#}
+{#                }#}
+{#        </script>#}
+{#{% endblock %}#}

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 12px;
+            }
+            .header {
+                font-size: 16px;
+                font-weight: 100;
+                text-align: center;
+            }
+            .title {
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+            span {
+                font-weight: bold;
+                margin-left: 10px;
+            }
+            .boxed {
+              border: 1px solid green ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>Associazione di volontariato Porta Aperta
+                <p style="font-size: 12px">Strada cimitero San Cataldo, 117 41123 MODENA tel. 059827870 mail infoaapa@porta-aperta.org</p>
+                <p class='title'> COMUNICAZIONE DI DIMMISSIONE AL SERVIZIO DI ACCOGLIENZA RESIDENZIALE</p>
+            </div>
+            {% if utente %}
+            <P>Con la presente si comunica che il sig:</P>
+            <div>
+                <span>cognome: </span>{{ utente.cogn }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>nome: </span>{{ utente.nom }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>genere: </span>{{ utente.genere }}
+            </div>
+            <div>
+                <span>data di nascita: </span>{{ utente.nasc }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>luogo di nascita: </span>{{ utente.luogo }}
+            </div>
+            <div>
+                <span>nazionalità: </span>{{ utente.cittadinanza }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>status: </span>{{ utente.status }}
+            </div>
+            <div>
+                <span>codice fiscale: </span>{{ utente.cf }}
+            </div>
+             <div>
+                <span>tipo di documento: </span>{{ utente.doc }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>no: </span>{{ utente.ndoc }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>scadenza: </span>{{ utente.scadenza }}
+            </div>
+            <div>
+                <span>residenza: </span>{% if utente.res %}{{ utente.resultima }}{% else %}NO{% endif %}
+            </div>
+            <p>è stato dimesso dal Centro di accoglienza diocesano di Porta Aperta in via Strada Cimetero San Cataldo, 117 a Modena inviato da</p>
+             <br>
+            <p>Tipologia di accoglienza</p>
+            <p>Data di ammissione: {{ today }}</p>
+                <p>{{ today }}</p><p>Il Direttore <br> Giorgio Bonini</p>
+         </div>
+            {% else %}
+                C'e stato un errore.
+            {% endif %}
+        </div>
+
+    </body>
+</html>

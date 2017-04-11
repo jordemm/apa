@@ -1,0 +1,44 @@
+{% extends "admin/change_form.html" %}
+    {% block extrahead %}{{ block.super }}
+        <script type="text/javascript" src=""></script>
+        {{ media }}
+    {% endblock %}
+
+    {% block content %}
+        {{ block.super }}
+
+    {% endblock %}
+
+{% block after_field_sets %}
+    {{ block.super }}
+    <table width="100%" style="color: #054c65">
+    <tr>
+        <td width="50%">
+            <table>
+                 <tr>SERVIZIO SOCIALI COMUNE DI MODENA</tr>
+                 <tr><td> POLO 1 P.ZZA REDECOCCA T.059 2033620</td><td> POLO 2 VIA MORANDI, 55 T.0592033999 </td></tr>
+                 <tr><td> POLO 3 VIA VITERBO, 74 T.0592034300</td><td> POLO 4 VIA NEWTON, 150/B T.0592034000</td></tr>
+                 <tr><td> CENTRO STRANIERI V.MONTE KOSICA, 56 T.059 2033411</td></tr>
+            </table>
+        </td>
+        <td>
+             <table>
+                 <tr>CENTRI ACCOGLIENZA CARITAS IN EMILIA-ROMAGNA</tr>
+                 <tr><td>Pietralunga Silvano Caritas Fidenza 335744151313</td><td>Rubini Marisa Casa S. Pietro Fidenza 3295476747</td></tr>
+                 <tr><td>Battini Marco Assoc.Papa GiovanniXXIIIR.E. 3296707303</td><td>Agirò Francesco Caritas Piacenza 0523332750</td></tr>
+                 <tr><td>Cavina Damiano Caritas Faenza 0546.680061 </td><td>Copertino Marcello Caritas Forlì 0543.35192</td></tr>
+                 <tr><td>Bazzoni Raffaella Caritas Ravenna 0544213677</td><td>Aicardi Marco Coop.Dimorad'Abramo RE 3408113563</td></tr>
+                 <tr><td>Rossi Maria Carla Caritas Rimini 3473809350</td><td>Gibertoni Alessandro Caritas Carpi 3285939570</td></tr>
+                 <tr><td>Gabbi Luca Caritas Cesena 054729369</td><td>Corghi Valerio Caritas Diocesana RE 0522921351</td></tr>
+                 <tr><td>Posto di ascolto e indirizzo di Bologna (Stazione) Anna M.Barbiroli 3476891496 051244044</td><td></td></tr>
+            </table>
+        </td>
+    </tr>
+    </table>
+
+{% endblock %}
+
+{% block admin_change_form_document_ready %}
+    {{ block.super }}
+
+{% endblock %}

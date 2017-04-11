@@ -1,0 +1,10 @@
+Programma in Python creato per calcolare il codice fiscale
+
+-Eseguire codice_fiscale(ui).py per il programma da terminale (ui: user interface)
+
+-Eseguire codice_fiscale(gui).py per il programma ad interfaccia grafica (gui: graphical user interface)
+n.b. e' necessario aver installati:
+-Python 2.x
+-PyGtk  2.x
+-Gtk    2.x
+

@@ -1,0 +1,8 @@
+cartellaSociale/static_root/grappelli/*
+cartellaSociale/static_root/admin/*
+cartellaSociale/media_root/album/*
+ansible/*
+cartellaSociale/migrations/*
+cartellaSociale/static_root/grappelli/*
+cartellaSociale/db.sqlite3
+*/local.py

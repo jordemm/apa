@@ -1,0 +1,19 @@
+{% extends "admin/base.html" %}
+{% load i18n grp_tags %}
+
+{% block title %}{{ title }} | {% get_site_title %}{% endblock %}
+
+{% block branding %}
+{#     Use the div#grp-branding for branding elements, e.g. a logo #}
+     <div id="grp-branding">
+{#      <img src="/home/jordan/Pictures/super_mario.jpg" alt="Smiley face" height="42" width="42">#}
+     </div> 
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}
+    <div class="grp-module grp-row" style="background-color: inherit; border: none">
+        <p style="width: 95%; text-align: right">Questo gestionale è stato sviluppato da ​ <a href="http://www.appaway.it"> <strong>AppAway s.r.l</strong></a>
+    </div>
+{% endblock %}
