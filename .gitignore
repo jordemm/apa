@@ -5,4 +5,4 @@ ansible/*
 cartellaSociale/migrations/*
 cartellaSociale/static_root/grappelli/*
 cartellaSociale/db.sqlite3
-*/local.py
+cartellaSociale/settings/local.py
